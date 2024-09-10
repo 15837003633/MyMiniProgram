@@ -1,0 +1,20 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+
+    <text class="title">{{message}}</text>
+
+    <block wx:for="{{movies}}" wx:key="*this">
+        <view>{{item}}</view>
+    </block>
+
+    <view class="count_panel">
+        <text class="count_label">当前的计数是：{{countNum}}</text>
+        <view>
+            <button size="mini" type="primary" bind:tap="addCountNum">add</button>
+            <button size="mini" type="warn" bind:tap="reduceCountNum">ruduce</button>
+        </view>
+    </view>
+
+
+
+</view>

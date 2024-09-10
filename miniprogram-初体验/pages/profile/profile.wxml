@@ -1,0 +1,6 @@
+<!--pages/profile/profile.wxml-->
+<view>
+<block wx:for="{{count}}" wx:key="*this">
+    <view class="cell">{{item}}</view>
+</block>
+</view>

@@ -1,0 +1,4 @@
+/* pages/profile/profile.wxss */
+.cell {
+    height: 100rpx;
+}
