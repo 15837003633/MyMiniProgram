@@ -1,0 +1,9 @@
+<block wx:for="{{items}}" wx:key="*this">
+    <button 
+        type="primary" 
+        bind:tap="btnClick"
+        data-item='{{item.path}}'
+    >
+        {{item.title}}
+    </button>
+</block>

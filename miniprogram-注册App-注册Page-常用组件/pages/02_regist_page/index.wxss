@@ -1,0 +1,4 @@
+image {
+    /* image 默认是size 320*240 */
+    width: 100%;
+}

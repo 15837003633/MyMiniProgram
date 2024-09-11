@@ -1,0 +1,8 @@
+<!--pages/02_regist_page/index.wxml-->
+<swiper circular autoplay interval="2000" indicator-dots>
+    <block wx:for="{{banners}}" wx:key="*this">
+        <swiper-item>
+            <image src="{{item.image}}" mode=""/>
+        </swiper-item>
+    </block>
+</swiper>

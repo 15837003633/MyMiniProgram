@@ -1,0 +1,7 @@
+<!--pages/01_regist_app/index.wxml-->
+<text>pages/01_regist_app/index.wxml</text>
+
+
+
+<view>name:{{name}}</view>
+<view>score:{{score}}</view>
