@@ -1,1 +1,27 @@
-/* pages/03_common_cpns/index.wxss */
+
+
+.btn{
+    color: white;
+}
+
+.img{
+    width: 100%;
+}
+
+scroll-view{
+    height: 400rpx;
+    background-color: gray;
+}
+/* .vertical_scrollview{
+
+} */
+
+.horizatal_scrollview{
+    display: flex;
+}
+
+.scrollItem{
+    height: 350rpx;
+    width: 350rpx;
+    flex-shrink: 0;
+}

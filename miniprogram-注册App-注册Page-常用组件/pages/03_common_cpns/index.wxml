@@ -1,2 +1,40 @@
-<!--pages/03_common_cpns/index.wxml-->
-<text>pages/03_common_cpns/index.wxml</text>
+<view>----------scroll-view----------</view>
+<scroll-view class="vertical_scrollview" scroll-y>
+    <block wx:for="{{colors}}" wx:key="*this">
+        <button class="scrollItem"  style="background-color: {{item}};">{{item}}</button>
+    </block>
+</scroll-view>
+
+<scroll-view class="horizatal_scrollview" scroll-x enable-flex>
+    <block wx:for="{{colors}}" wx:key="*this">
+        <button class="scrollItem"  style="background-color: {{item}};">{{item}}</button>
+    </block>
+</scroll-view>
+
+<view>----------image----------</view>
+<!-- 默认size 320*240 -->
+<!-- mode常用widthFix aspectFill aspectFit  -->
+<image class="img" src="/assets/hamburger.jpeg" mode="aspectFill"/>
+<button type="primary" bind:tap="chooseImage">选择本地图片</button>
+<image class="img" src="{{chooseImage}}" mode="widthFix"/>
+
+<view>----------view----------</view>
+
+<view>----------button----------</view>
+<button>默认样式</button>
+<button size="mini">size属性</button>
+<button size="mini" type="primary">type属性</button>
+
+<!-- bool属性的两种写法 -->
+<button size="mini"  disabled="true">disable</button>
+<button size="mini"  disabled>disable</button>
+<button size="mini"  loading>加载中</button>
+
+<!-- button 绑定事件，绑定自定义数据 -->
+<block wx:for="{{colors}}" wx:key="*this">
+    <button class="btn" bind:tap="onClick" data-item="{{item}}" style="background-color: {{item}};">{{item}}</button>
+</block>
+
+
+<view>----------text----------</view>
+<text>文本文本</text>
