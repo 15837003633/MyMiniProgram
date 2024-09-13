@@ -1,0 +1,49 @@
+.segment_control {
+    /* background-color: grey; */
+    display: flex;
+    justify-content: center;
+
+}
+
+.segment_control .segment_item{
+    /* background-color: blue; */
+    height: 80rpx;
+    line-height: 80rpx;
+    /* flex 属性是flex-glow flex-shrink flex-basis的组合*/
+    flex: 1;
+    text-align: center;
+}
+
+.title{
+    /* background-color: wheat; */
+    padding: 10rpx 20rpx;
+}
+.active{
+    border-bottom: 1px solid red;
+}
+
+
+/* 捕获和冒泡 */
+.view1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600rpx;
+    height: 600rpx;
+    background-color: orange;
+  }
+  
+  .view2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400rpx;
+    height: 400rpx;
+    background-color: purple;
+  }
+  
+  .view3 {
+    width: 200rpx;
+    height: 200rpx;
+    background-color: red;
+  }

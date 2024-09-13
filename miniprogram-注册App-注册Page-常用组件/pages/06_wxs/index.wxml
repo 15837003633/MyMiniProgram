@@ -1,0 +1,22 @@
+
+<!-- wxs的模块化只支持commonJS，并且不支持es6 -->
+
+<!-- 定义页内wxs -->
+<wxs module="format">
+    function formatPrice(price){
+        return "$" + price
+    }
+    module.exports = {
+        formatPrice:formatPrice
+    }
+</wxs>
+
+<!-- 引入外部wxs文件 -->
+<wxs src="/pages/06_wxs/index.wxs" module="total"/>
+
+<block wx:for="{{books}}" wx:key="id" wx:for-item="book" wx:for-index="i">
+<view>{{book.name}}-{{format.formatPrice(book.price)}}</view>    
+</block>
+
+
+<view>总价格:{{total.totalPrice(books)}}</view>

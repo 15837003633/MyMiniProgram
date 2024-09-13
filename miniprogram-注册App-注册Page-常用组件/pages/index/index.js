@@ -15,6 +15,22 @@ Page({
                 title:"03常用组件",
                 path:"/pages/03_common_cpns/index"
             },
+            {
+                title:"04WXSS",
+                path:"/pages/04_wxss/index"
+            },
+            {
+                title:"05WXML",
+                path:"/pages/05_wxml/index"
+            },
+            {
+                title:"06WXS",
+                path:"/pages/06_wxs/index"
+            },
+            {
+                title:"07事件",
+                path:"/pages/07_event/index"
+            }   
         ]
     },
     btnClick(event){

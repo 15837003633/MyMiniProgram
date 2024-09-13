@@ -1,0 +1,39 @@
+
+
+
+<!-- data-* 传递数据 -->
+<view class="segment_control">
+    <block wx:for="{{tabs}}" wx:key="*this">
+        <view class="segment_item" bind:tap="onItemClick" data-index="{{index}}">
+            <!-- 
+                ==：进行类型转换后再比较。
+                ===：不进行类型转换，直接比较类型和值。
+            -->
+            <text class="title {{currentIndex === index ? 'active':''}}">{{item}}</text>
+        </view>
+    </block>
+</view>
+
+
+<!-- 6.捕获和冒泡阶段 -->
+<view class="view1" capture-bind:tap="onView1CaptureTap" bindtap="onView1Tap">
+  <view class="view2" capture-bind:tap="onView2CaptureTap" bindtap="onView2Tap">
+    <view class="view3" capture-bind:tap="onView3CaptureTap" bindtap="onView3Tap"></view>
+  </view>
+</view>
+
+<!-- 7.将bind替换为catch: 阻止事件仅一步传递(了解) -->
+
+<!-- 8.给逻辑传递数据, 另外一种方式: mark: -->
+<view 
+  class="mark"
+  bindtap="onMarkTap"
+  data-name="why"
+  data-age="18"
+  mark:name="kobe"
+  mark:age="30"
+>
+ <text mark:address="洛杉矶" class="title">mark</text>
+</view>
+
+<!-- 会把事件中的所有的mark属性合并到同一个对象中，打印mark：{address: "洛杉矶", age: "30", name: "kobe"} -->

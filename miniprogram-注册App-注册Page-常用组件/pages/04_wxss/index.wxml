@@ -1,0 +1,6 @@
+<view>行内样式</view>
+<view style="background-color: green;"><Text style="background-color: white;">hello</Text></view>
+<view style="background-color: red;text-align: center;"><Text style="background-color: white;">hello</Text></view>
+
+<view>页面样式</view>
+<button class="btn">按钮</button>

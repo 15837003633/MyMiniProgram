@@ -1,0 +1,8 @@
+function totalPrice(nums){
+    return nums.reduce(function(previous,item){
+        return previous + item.price
+    },0)
+}
+module.exports = {
+    totalPrice:totalPrice
+}

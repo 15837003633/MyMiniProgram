@@ -1,10 +1,12 @@
 <view>----------scroll-view----------</view>
+<text>上下滚动</text>
 <scroll-view class="vertical_scrollview" scroll-y>
     <block wx:for="{{colors}}" wx:key="*this">
         <button class="scrollItem"  style="background-color: {{item}};">{{item}}</button>
     </block>
 </scroll-view>
 
+<text>左右滚动</text>
 <scroll-view class="horizatal_scrollview" scroll-x enable-flex>
     <block wx:for="{{colors}}" wx:key="*this">
         <button class="scrollItem"  style="background-color: {{item}};">{{item}}</button>

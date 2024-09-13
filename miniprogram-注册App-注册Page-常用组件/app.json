@@ -3,11 +3,15 @@
     "pages/index/index",
     "pages/01_regist_app/index",
     "pages/02_regist_page/index",
-    "pages/03_common_cpns/index"
+    "pages/03_common_cpns/index",
+    "pages/04_wxss/index",
+    "pages/05_wxml/index",
+    "pages/06_wxs/index",
+    "pages/07_event/index"
   ],
   "window": {
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "Day02",
+    "navigationBarTitleText": "小程序学习",
     "navigationBarBackgroundColor": "#00f"
   },
   "style": "v2",

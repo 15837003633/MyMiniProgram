@@ -1,0 +1,30 @@
+<view>-----Mustache-----</view>
+<!-- 数据绑定使用 Mustache 语法（双大括号）将变量包起来，可以作用于 -->
+<text>1.简单绑定</text>
+<view> {{ message }} </view>
+
+<text>2.组件属性(需要在双引号之内)</text>
+<view id="item-{{message}}"> </view>
+
+<text>3.控制属性(需要在双引号之内)</text>
+<view wx:if="{{score>=90}}">优秀</view>
+
+<text>4.关键字(需要在双引号之内)</text>
+<checkbox checked="{{false}}"> </checkbox>
+<!-- 特别注意：不要直接写 checked="false"，其计算结果是一个字符串，转成 boolean 类型后代表真值。 -->
+
+
+
+<view>---wx:if wx:elif wx:else---</view>
+<view>您的成绩：</view>
+<view wx:if="{{score>=90}}">优秀</view>
+<view wx:elif="{{score>=80}}">良好</view>
+<view wx:elif="{{score>=60}}">及格</view>
+<view wx:else>不及格</view>
+
+<!-- if esle不满足条件的，就不在dom树里，也就不渲染 -->
+
+
+<view>---hidden---</view>
+<!-- 基础组件的通用属性 -->
+<view hidden="{{false}}">不及格，去学习</view>
