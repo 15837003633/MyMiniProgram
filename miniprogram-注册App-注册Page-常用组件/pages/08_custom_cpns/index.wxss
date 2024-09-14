@@ -1,0 +1,11 @@
+/* pages/08_custom_cpns/index.wxss */
+.sanguo{
+  color: yellow;
+  background-color: red;
+}
+
+
+.xiyouji{
+  color: green;
+  background-color: skyblue;
+}

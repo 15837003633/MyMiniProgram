@@ -1,0 +1,13 @@
+<view class="mut-solt">
+  <view class="header">
+    <slot name="h"></slot>
+  </view>
+
+  <view class="content">
+    <slot name="c"></slot>
+  </view>
+
+  <view class="footer">
+    <slot name="f"></slot>
+  </view>
+</view>

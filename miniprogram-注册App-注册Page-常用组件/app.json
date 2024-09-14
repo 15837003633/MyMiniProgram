@@ -7,7 +7,9 @@
     "pages/04_wxss/index",
     "pages/05_wxml/index",
     "pages/06_wxs/index",
-    "pages/07_event/index"
+    "pages/07_event/index",
+    "pages/08_custom_cpns/index",
+    "pages/09_cpns_slot/index"
   ],
   "window": {
     "navigationBarTextStyle": "white",

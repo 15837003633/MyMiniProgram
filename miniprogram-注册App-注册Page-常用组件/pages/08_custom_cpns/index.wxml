@@ -1,0 +1,26 @@
+<!-- 1.内置组件 -->
+<text>pages/08_custom_cpns/index.wxml</text>
+
+<!-- 2.自定义组件 -->
+<section-info 
+title="三国演义" 
+content="话说天下大势合久必分" 
+bind:onSectionCpnTitleCallback="onSectionCpnTitleClick"
+content-style="sanguo"
+>
+</section-info>
+
+
+<section-info 
+title="西游记" 
+content="第一集猴王出世" 
+content-style="xiyouji"
+>
+</section-info>
+
+<!-- 3.自定义组件 练习tab-control -->
+<tab-control titles="{{cates}}" bind:index-changed="tabcontrol_index_changed"></tab-control>
+<tab-control class="city" titles="{{['北京','上海','杭州']}}"></tab-control>
+
+<!-- 4.外部页面调用组件的方法 -->
+<button bind:tap="onbBtnClick">页面中调用组件的方法</button>

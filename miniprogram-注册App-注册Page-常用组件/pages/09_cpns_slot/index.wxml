@@ -1,0 +1,17 @@
+<!-- 1.单个插槽 -->
+<sig-slot>哈哈哈哈</sig-slot>
+
+<sig-slot>
+<button size="mini" type="primary">button</button>
+</sig-slot>
+
+<!-- 2.多个插槽 -->
+<mut-slot>
+  <view slot="h">我是头部插槽</view>
+  <view slot="c">我是内容插槽</view>
+  <view slot="f">我是尾部插槽</view>
+</mut-slot>
+
+
+<!-- 3.组件的Behavior -->
+<my-behavior></my-behavior>

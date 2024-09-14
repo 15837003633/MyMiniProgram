@@ -1,0 +1,6 @@
+.mut-solt{
+  display: flex;
+  justify-content:space-around;
+  border: 1px solid green;
+  margin: 10px 0px;
+}
