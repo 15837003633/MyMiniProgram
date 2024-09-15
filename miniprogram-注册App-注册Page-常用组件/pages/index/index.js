@@ -39,6 +39,10 @@ Page({
         title: "09组件插槽slot",
         path: "/pages/09_cpns_slot/index"
       },
+      {
+        title: "10API网络请求",
+        path: "/pages/10_api_network/index"
+      },
     ]
   },
   btnClick(event) {
