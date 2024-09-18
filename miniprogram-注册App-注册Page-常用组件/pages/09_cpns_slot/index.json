@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "sig-slot":"/components/sig-slot/index",
+    "mut-slot":"/components/mut-slot/index",
+    "my-behavior":"/components/my-behavior/index"
+  }
+}

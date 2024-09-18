@@ -1,0 +1,4 @@
+<view class="section-info">
+  <view class="header " bind:tap="onTitleClick">{{title}}</view>
+  <view class="content content-style">{{content}}</view>
+</view>

@@ -1,0 +1,22 @@
+.tab_control {
+  /* background-color: gray; */
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.tab_item{
+  /* background-color: greenyellow; */
+  flex-grow: 2;
+}
+
+.tab_item_title {
+  /* background-color: skyblue; */
+  padding: 10rpx 5rpx;
+  
+}
+.tab_item_title.active{
+  border-bottom: 2rpx solid red;
+}

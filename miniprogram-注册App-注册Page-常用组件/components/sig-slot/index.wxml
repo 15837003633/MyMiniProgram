@@ -1,0 +1,8 @@
+<!--components/sig-solt/index.wxml-->
+<view class="sig-solt">
+<view class="header">header</view>
+<view class="content">
+<slot></slot>
+</view>
+<view class="footer">footer</view>
+</view>

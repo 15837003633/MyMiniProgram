@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "section-info":"/components/section-info/index",
+    "tab-control":"/components/tab-control/index"
+  }
+}

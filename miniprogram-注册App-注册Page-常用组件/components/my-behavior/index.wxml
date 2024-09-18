@@ -1,0 +1,6 @@
+<!--components/my-behavior/index.wxml-->
+<text>当前计数是：{{currentCount}}</text>
+
+<button bind:tap="addNum">+1</button>
+<button bind:tap="minNum">-1</button>
+<button bind:tap="ontap">重置</button>
