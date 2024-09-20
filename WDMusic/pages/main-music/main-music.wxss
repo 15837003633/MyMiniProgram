@@ -1,0 +1,18 @@
+page{
+  --search-padding: 10px 0px
+  background-color: #eee;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.banner{
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.banner_item {
+
+}
+
+.banner_image{
+  width: 100%;
+}

@@ -1,0 +1,7 @@
+<view class="content">
+  <view class="title">{{title}}</view>
+  <view class="more" wx:if="{{hasMore}}" bind:tap="onMoreClick">
+    <text class="more_content">更多</text>
+    <van-icon name="arrow" />
+  </view>
+</view>

@@ -1,0 +1,7 @@
+<video src="{{mv_url}}" autoplay="{{false}}"/>
+<scroll-view scroll-y>
+  <view class="info">{{mv_info.name}}-{{mv_info.desc}}</view>
+  <block wx:for="{{100}}">
+    <view>相关视频： {{item}}</view>
+  </block>
+</scroll-view>

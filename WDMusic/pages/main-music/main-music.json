@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-button":"../../miniprogram_npm/@vant/weapp/button/index",
+    "van-search":"../../miniprogram_npm/@vant/weapp/search/index",
+    "area-header":"../../components/area-header/area-header"
+  },
+  "navigationBarBackgroundColor": "#eee"
+}

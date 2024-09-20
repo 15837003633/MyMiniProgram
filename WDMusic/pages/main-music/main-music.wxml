@@ -1,0 +1,11 @@
+<van-search value="" placeholder="请输入搜索关键词" background="#eee" shape="round"/>
+<swiper class="banner" indicator-dots style="height:{{banner_height}}px">
+  <block wx:for="{{banners}}" wx:key="targetId">
+    <swiper-item class="baner_item">
+      <image class="banner_image" src="{{item.imageUrl}}" mode="widthFix" bindload="onImageDidLoad"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<area-header title="推荐歌曲" hasMore="{{true}}" bind-onMoreClick="onAreaHeaderMoreClick"></area-header>
+<area-header title="热门歌单" hasMore="{{false}}"></area-header>

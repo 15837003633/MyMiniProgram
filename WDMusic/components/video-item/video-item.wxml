@@ -1,0 +1,13 @@
+<view class="item" bind:tap="onItemClick" data-mvid="{{itemData.id}}">
+  <view class="album">
+    <image src="{{itemData.cover}}" class="album-image" mode="widthFix"/>
+    <view class="info">
+      <view class="count">{{itemData.playCount}}</view>
+      <text class="duration">{{itemData.mv.videos[0].duration}}</text>
+    </view>
+  </view>
+  <view class="content">
+    {{itemData.name}}-{{itemData.artistName}}
+  </view>
+  
+</view>
