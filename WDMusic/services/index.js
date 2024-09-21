@@ -1,4 +1,4 @@
-
+import {baseURL} from "./config"
 class WDRequest {
   constructor(baseUrl) {
     this.baseUrl = baseUrl
@@ -31,7 +31,7 @@ class WDRequest {
   }
 }
 
-const wdrequest_instance = new WDRequest("http://codercba.com:9002")
+const wdrequest_instance = new WDRequest(baseURL)
 
 export {
   wdrequest_instance

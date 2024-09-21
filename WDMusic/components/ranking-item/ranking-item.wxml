@@ -1,0 +1,23 @@
+<wxs module="utils">
+  function slice(arr){
+    if (!arr) return []
+    return arr.slice(0,3)
+  }
+  module.exports = {
+    slice:slice
+  }
+</wxs>
+
+
+<view class="rank">
+  <view class="left">
+    <view class="name">{{rankingInfo.name}}</view>
+    <block wx:for="{{utils.slice(rankingInfo.tracks)}}" wx:key="id">
+      <view class="song">{{index}}.{{item.name}}</view>
+    </block>
+  </view>
+  <view class="right">
+    <image class="icon" src="{{rankingInfo.coverImgUrl}}" mode="widthFix"/>
+    <text class="count">{{rankingInfo.playCount}}</text>
+  </view>
+</view>

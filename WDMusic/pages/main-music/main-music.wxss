@@ -1,5 +1,5 @@
 page{
-  --search-padding: 10px 0px
+  --search-padding: 10px 0px;
   background-color: #eee;
   padding: 0 20rpx;
   box-sizing: border-box;
@@ -9,10 +9,30 @@ page{
   border-radius: 20rpx;
   overflow: hidden;
 }
-.banner_item {
-
-}
 
 .banner_image{
   width: 100%;
+}
+
+.recomed-song .header {
+  margin: 20rpx 0;
+}
+
+.recomed-song .body .item {
+  margin: 20rpx 0;
+}
+
+.menu-panel{
+  margin-top: 40rpx;
+}
+
+.ranking-panel {
+  margin-top: 20rpx;
+}
+
+.ranking-panel .title {
+  margin-top: 20rpx;
+}
+.ranking-panel .item {
+  margin-top: 16rpx;
 }

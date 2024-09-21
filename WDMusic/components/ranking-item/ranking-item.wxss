@@ -1,0 +1,39 @@
+.rank {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ddd;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.left {
+  flex-grow: 1;
+  padding: 20rpx;
+}
+
+.left .name {
+  font-size: 32rpx;
+  font-weight: 500;
+}
+
+.left .song {
+  margin-top: 6rpx;
+  color: #333;
+  font-size: 22rpx;
+  font-weight: 400;
+}
+
+.right{
+  position: relative;
+}
+
+.right .icon {
+  width: 180rpx;
+}
+
+.right .count {
+  position: absolute;
+  right: 0rpx;
+  bottom: 0rpx;
+}

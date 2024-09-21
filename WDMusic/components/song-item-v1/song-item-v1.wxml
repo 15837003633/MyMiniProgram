@@ -1,0 +1,8 @@
+<view class="content" bind:tap="onPlaySongClick">
+  <image class="album" src="{{songInfo.al.picUrl}}" mode="widthFix"/>
+  <view class="info">
+    <view class="song-name">{{songInfo.al.name}}</view>
+    <view class="song-author">{{songInfo.ar[0].name}}</view>
+  </view>
+  <image class="arrow" src="../../assets/images/icons/arrow-right.png" mode="widthFix"/>
+</view>

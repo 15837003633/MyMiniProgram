@@ -1,0 +1,7 @@
+<view class="menu">
+  <view class="album">
+    <image class="img" src="{{menuInfo.coverImgUrl}}" mode="widthFix"/>
+    <text class="count">{{menuInfo.playCount}}</text>
+  </view>
+  <view class="content">{{menuInfo.name}}</view>
+</view>

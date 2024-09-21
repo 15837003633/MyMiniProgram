@@ -7,5 +7,32 @@
   </block>
 </swiper>
 
-<area-header title="推荐歌曲" hasMore="{{true}}" bind-onMoreClick="onAreaHeaderMoreClick"></area-header>
-<area-header title="热门歌单" hasMore="{{false}}"></area-header>
+<view class="recomed-song">
+  <view class="header">
+    <area-header title="推荐歌曲" hasMore="{{true}}" bind:onMoreClick="onRecSongMoreClick"/>
+  </view>
+  <view class="body">
+    <block wx:for="{{recomentSongList}}" wx:key="id">
+      <view class="item">
+        <song-item-v1 songInfo="{{item}}" bind:playSong="onPlaySongAction"></song-item-v1>
+      </view>
+    </block>
+  </view>
+</view>
+
+<view class="menu-panel">
+  <area-menu title="热门歌单" hasMore="{{true}}" menuList="{{hotMenuList}}"/>
+</view>
+
+<view class="menu-panel">
+  <area-menu title="推荐歌单" hasMore="{{true}}" menuList="{{recMenuList}}"/>
+</view>
+
+<view class="ranking-panel">
+  <area-header class="title" title="巅峰榜" hasMore="{{false}}"/>
+  <block wx:for="{{rankSongListInfo}}" wx:key="id">
+    <view class="item">
+      <ranking-item rankingInfo="{{item}}"/>
+    </view>
+  </block>
+</view>

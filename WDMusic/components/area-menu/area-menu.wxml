@@ -1,0 +1,6 @@
+<area-header title="{{title}}" hasMore="{{hasMore}}"></area-header>
+<scroll-view class="list" scroll-x enable-flex>
+  <block wx:for="{{menuList}}" wx:key="id">
+    <menu-item class="item" menuInfo="{{item}}"/>
+  </block>
+</scroll-view>
