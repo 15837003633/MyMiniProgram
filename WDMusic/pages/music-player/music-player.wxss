@@ -1,0 +1,93 @@
+.bg .img {
+  position: fixed;
+  top:0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bg .mask {
+  position: fixed;
+  top:0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10rpx)
+}
+
+.tab {
+  color: #aaa;
+}
+
+.tab .divide {
+  padding: 0 10rpx;
+}
+
+.tab .active{
+  color: #fff;
+}
+
+
+.song-panel{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 60rpx;
+  padding-bottom: 100rpx;
+  color: #fff;
+}
+
+.song-panel .album{
+  flex-grow: 1;
+}
+.song-panel .album-img{
+  width: 100%;
+  border-radius: 20rpx;
+}
+.song-panel .info {
+  margin: 20rpx 0;
+}
+
+.song-panel .info-song{
+  font-size: 40rpx;
+}
+.song-panel .info-author{
+  font-size: 26rpx;
+}
+
+.song-panel .lyric {
+  text-align: center;
+  font-size: 26rpx;
+}
+
+.song-panel .progress {
+  margin: 20rpx 0;
+}
+
+.song-panel .progress-slider {
+  margin: 0 0 4rpx 10rpx;
+}
+.song-panel .progress-duration {
+  display: flex;
+  justify-content: space-between;
+  font-size: 26rpx;
+}
+
+.song-panel .control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.song-panel .control .btn{
+  width: 60rpx;
+}
+
+.song-panel .control .btn.play{
+  width: 120rpx;
+}

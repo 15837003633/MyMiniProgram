@@ -26,6 +26,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    onSongClick(){
+      wx.navigateTo({
+        url: `/pages/music-player/music-player?id=${this.properties.songInfo.id}`,
+      })
+    }
   }
 })

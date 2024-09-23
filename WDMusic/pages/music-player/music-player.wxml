@@ -1,0 +1,60 @@
+<view>
+
+<!-- 虚化背景图 -->
+  <view class="bg">
+    <image class="img" src="{{songInfo.al.picUrl}}" mode="aspectFill"/>
+    <view class="mask"></view>
+  </view>
+
+<!-- 自定义导航条 -->
+  <nav-bar bind:onLeftAction="onNavBarLeftAction">
+    <view slot="center" class="tab">
+      <block wx:for="{{tabs}}" wx:key="*this">
+        <text class="{{currentIndex === index ? 'active': ''}}" bind:tap="onTabClick" data-index="{{index}}">{{item}}</text>
+        <text class="divide" wx:if="{{index != (tabs.length -1)}}">|</text>
+      </block>
+    </view>
+  </nav-bar>
+
+<!-- 滚动容器 -->
+  <swiper style="height:{{contentHeight}}px" bindchange="onSwiperChanged" current="{{currentIndex}}">
+    <!-- 歌曲tab -->
+    <swiper-item>
+      <view class="song-panel">
+      <!-- 封面 -->
+        <view class="album">
+          <image class="album-img" src="{{songInfo.al.picUrl}}" mode="widthFix"/>
+        </view>
+        <!-- 歌曲信息 -->
+        <view class="info">
+          <view class="info-song">{{songInfo.name}}</view>
+          <view class="info-author">{{songInfo.ar[0].name}}</view>
+        </view>
+        <!-- 一句歌词信息 -->
+        <view class="lyric">一句歌词</view>
+        <!-- 播放进度 -->
+        <view class="progress">
+          <slider class="progress-slider" block-size="10" />
+          <view class="progress-duration">
+            <text class="progress-duration-left">00:01</text>
+            <text class="progress-duration-right">03:22</text>
+          </view>
+        </view>
+        <!-- 音乐控制 -->
+        <view class="control">
+          <image class="btn order" src="/assets/images/player/play_order.png" mode="widthFix"/>
+          <image class="btn prev" src="/assets/images/player/play_prev.png" mode="widthFix"/>
+          <image class="btn play" src="/assets/images/player/play_pause.png" mode="widthFix"/>
+          <image class="btn next" src="/assets/images/player/play_next.png" mode="widthFix"/>
+          <image class="btn list" src="/assets/images/player/play_music.png" mode="widthFix"/>
+        </view>
+      </view>
+    </swiper-item>
+    <!-- 歌词tab -->
+    <swiper-item>
+      <view class="lyric-panel"></view>
+    </swiper-item>
+  </swiper>
+
+
+</view>

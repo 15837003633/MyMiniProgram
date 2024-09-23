@@ -1,0 +1,18 @@
+<view class="content">
+  <view class="status-bar" style="height:{{statusBarHeight}}px;"></view>
+  <view class="nav-bar">
+    <view class="left" bind:tap="onLeftClick">
+      <view class="slot">
+        <slot name="left"></slot>
+      </view>
+      <image class="left-default" src="/assets/images/icons/arrow-left.png" mode="widthFix"/>
+    </view>
+    <view class="center">
+      <view class="slot">
+        <slot name="center"></slot>
+      </view>
+      <text class="center-default">{{title}}</text>
+    </view>
+    <view class="right"></view>
+  </view>
+</view>

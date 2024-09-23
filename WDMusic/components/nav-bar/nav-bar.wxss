@@ -1,0 +1,40 @@
+.content {
+  color: #fff;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  text-align: center;
+  align-items: center;
+}
+
+.nav-bar .left, .nav-bar .right{
+  width: 80rpx;
+}
+.left .left-default{
+  width: 40rpx;
+}
+
+.nav-bar .center {
+  flex: 1;
+}
+
+.left-default {
+  display: none;
+}
+
+.center-default {
+  display: none;
+}
+
+.left .slot:empty + .left-default {
+  display: inline-block;
+}
+
+.center .slot:empty + .center-default {
+  display: inline-block;
+}

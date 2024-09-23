@@ -1,4 +1,4 @@
-<view class="song">
+<view class="song" bind:tap="onSongClick">
   <view class="index">{{index}}</view>
   <view class="info">
     <view class="name">{{songInfo.name}}</view>

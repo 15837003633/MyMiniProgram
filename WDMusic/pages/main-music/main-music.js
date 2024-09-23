@@ -51,11 +51,6 @@ Page({
     })
   },
 
-  onPlaySongAction(event){
-    console.log("play song:",event.detail)
-  },
-
-
     // ========== 网络请求以及数据处理 ==========
 
   async fetchBannerData(){

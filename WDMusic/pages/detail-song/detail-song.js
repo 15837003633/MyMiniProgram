@@ -37,11 +37,12 @@ Page({
 
   async fetchMenuSongList(){
     const res = await getPlayListDetail(this.data.menuID)
-    this.setData({
-      songList: res.playlist
-    })
+    this.handleRecSongInfoState(res.playlist)
   },
   handleRecSongInfoState(res){
+    wx.setNavigationBarTitle({
+      title: res.name,
+    })
     this.setData({
       songList: res
     })

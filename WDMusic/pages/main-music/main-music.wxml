@@ -1,5 +1,5 @@
 <van-search value="" placeholder="请输入搜索关键词" background="#eee" shape="round"/>
-<swiper class="banner" indicator-dots style="height:{{banner_height}}px">
+<swiper class="banner" indicator-dots style="height:{{banner_height}}px" wx:if="{{banners.length > 0}}">
   <block wx:for="{{banners}}" wx:key="targetId">
     <swiper-item class="baner_item">
       <image class="banner_image" src="{{item.imageUrl}}" mode="widthFix" bindload="onImageDidLoad"/>
@@ -7,24 +7,24 @@
   </block>
 </swiper>
 
-<view class="recomed-song">
+<view class="recomed-song" wx:if="{{recomentSongList.length > 0}}">
   <view class="header">
     <area-header title="推荐歌曲" hasMore="{{true}}" bind:onMoreClick="onRecSongMoreClick"/>
   </view>
   <view class="body">
     <block wx:for="{{recomentSongList}}" wx:key="id">
       <view class="item">
-        <song-item-v1 songInfo="{{item}}" bind:playSong="onPlaySongAction"></song-item-v1>
+        <song-item-v1 songInfo="{{item}}"></song-item-v1>
       </view>
     </block>
   </view>
 </view>
 
-<view class="menu-panel">
+<view class="menu-panel" wx:if="{{hotMenuList.length > 0}}">
   <area-menu title="热门歌单" hasMore="{{true}}" menuList="{{hotMenuList}}"/>
 </view>
 
-<view class="menu-panel">
+<view class="menu-panel" wx:if="{{recMenuList.length > 0}}">
   <area-menu title="推荐歌单" hasMore="{{true}}" menuList="{{recMenuList}}"/>
 </view>
 

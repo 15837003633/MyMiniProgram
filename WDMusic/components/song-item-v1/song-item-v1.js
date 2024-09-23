@@ -7,8 +7,10 @@ properties: {
     }
   },
   methods: {
-    onPlaySongClick(event){
-      this.triggerEvent("playSong",this.data.songInfo)
+    onSongClick(){
+      wx.navigateTo({
+        url: `/pages/music-player/music-player?id=${this.properties.songInfo.id}`,
+      })
     }
   }
 })
