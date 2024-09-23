@@ -1,0 +1,82 @@
+.container{
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 60rpx;
+  color: #fff;
+}
+.container .bgimage {
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container .mask {
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10rpx);
+}
+
+.song{
+  display: flex;
+  justify-content: center;
+}
+
+.song .song-image {
+  width: 300rpx;
+  border-radius: 12rpx;
+}
+
+.song .song-info {
+  position: relative;
+  margin-left: 30rpx;
+  /* background-color: rosybrown; */
+}
+
+.author {
+  display: flex;
+  margin-top: 20rpx;
+  font-size: 26rpx;
+}
+
+.author .author-image {
+  width: 60rpx;
+  margin-right: 20rpx;
+  border-radius: 30rpx;
+}
+
+.author-bio {
+  font-size: 26rpx;
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.operation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40rpx;
+  padding: 0 80rpx;
+  font-size: 30rpx;
+}
+
+.operation image {
+  width: 40rpx;
+  margin-right: 10rpx;
+  vertical-align: middle;
+}

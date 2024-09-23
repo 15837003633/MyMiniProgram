@@ -1,0 +1,12 @@
+<view class="content">
+  <block wx:for="{{menuInfos}}" wx:key="cat">
+    <view class="title">
+      <area-header title="{{item.cat}}"></area-header>
+    </view>
+    <view class="list">
+      <block wx:for="{{item.playlists}}" wx:key="id" wx:for-item="iten">
+        <menu-item class="item" menuInfo="{{iten}}"></menu-item>
+      </block>
+    </view>
+  </block>
+</view>

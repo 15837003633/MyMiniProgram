@@ -32,7 +32,7 @@
   <area-header class="title" title="巅峰榜" hasMore="{{false}}"/>
   <block wx:for="{{rankSongListInfo}}" wx:key="id">
     <view class="item">
-      <ranking-item rankingInfo="{{item}}"/>
+      <ranking-item rankingInfo="{{item}}" key="{{index}}"/>
     </view>
   </block>
 </view>

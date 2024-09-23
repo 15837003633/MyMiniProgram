@@ -30,6 +30,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    onSongMenuMoreClick(){
+      console.log("歌单 点击更多")
+      wx.navigateTo({
+        url: '/pages/detail-menu/detail-menu',
+      })
+    },
   }
 })

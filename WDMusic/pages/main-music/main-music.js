@@ -25,7 +25,7 @@ Page({
     this.fetchBannerData()
     this.fetchSongMenuList()
     recomendSongStore.onState("recSongInfo",this.handleRecomendSongAction)
-    // recomendSongStore.dispatch("fetchRecomendSongList")
+    recomendSongStore.dispatch("fetchRecomendSongList")
     rankingStore.onState("newRankList",this.handleNewRankListAction)
     rankingStore.onState("originRankList",this.handleOriginRankListAction)
     rankingStore.onState("upRankList",this.handleUpRankListAction)
@@ -47,7 +47,7 @@ Page({
   onRecSongMoreClick(){
     console.log("推荐歌曲 点击更多")
     wx.navigateTo({
-      url: '../detail-song/detail-song',
+      url: `/pages/detail-song/detail-song?type=recommend`,
     })
   },
 

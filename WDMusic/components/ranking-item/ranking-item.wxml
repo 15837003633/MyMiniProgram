@@ -9,7 +9,7 @@
 </wxs>
 
 
-<view class="rank">
+<view class="rank" bind:tap="onMoreClick">
   <view class="left">
     <view class="name">{{rankingInfo.name}}</view>
     <block wx:for="{{utils.slice(rankingInfo.tracks)}}" wx:key="id">

@@ -8,6 +8,10 @@ Component({
     rankingInfo: {
       type: Object,
       value: {}
+    },
+    key:{
+      type:String,
+      value:"newRank"
     }
   },
 
@@ -22,7 +26,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    onMoreClick(){
+      wx.navigateTo({
+        url: `/pages/detail-song/detail-song?type=ranking&key=${this.properties.key}`,
+      })
+    }
   },
   lifetimes:{
     ready(){

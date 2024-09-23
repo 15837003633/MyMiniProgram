@@ -1,0 +1,26 @@
+<view class="container">
+  <image class="bgimage" src="{{songInfo.coverImgUrl}}" mode="aspectFill"/>
+  <view class="mask"></view>
+  <view class="song">
+    <image class="song-image" src="{{songInfo.coverImgUrl}}" mode="widthFix"/>
+    <view class="song-info">
+      <view class="info-name">{{songInfo.name}}</view>
+      <view class="author">
+        <image class="author-image" src="{{songInfo.creator.avatarUrl}}" mode="widthFix"/>
+        <view class="author-name">{{songInfo.creator.nickname}}</view>
+      </view>
+      <view class="author-bio">简介:{{songInfo.description}}</view>
+
+    </view>
+  </view>
+  <view class="operation">
+    <view class="left">
+      <image src="/assets/images/icons/favor_icon.png" mode="widthFix"/>
+      <text>{{songInfo.playCount}}</text>
+    </view>
+    <view class="right">
+      <image src="/assets/images/icons/share_icon.png" mode="widthFix"/>
+      <text>分享</text>
+    </view>
+  </view>
+</view>
