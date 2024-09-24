@@ -1,6 +1,7 @@
 import {recomendSongStore} from "../../store/recommendSong"
 import {rankingStore} from "../../store/rankSongStore"
 import {getPlayListDetail} from "../../services/music"
+import playerStore from "../../store/playerStore"
 
 Page({
   data:{
@@ -33,6 +34,12 @@ Page({
       this.data.menuID = event.id
       this.fetchMenuSongList()
     }
+  },
+
+  onSongClick(event){
+    const index = event.currentTarget.dataset.index
+    playerStore.setState("songList",this.data.songList.tracks)
+    playerStore.setState("selectIndex",index)
   },
 
   async fetchMenuSongList(){

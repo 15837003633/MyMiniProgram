@@ -12,7 +12,7 @@
         {
           "name": "播放页面",
           "pathName": "pages/music-player/music-player",
-          "query": "id=2124385868",
+          "query": "id=1403318151",
           "launchMode": "default",
           "scene": null
         },

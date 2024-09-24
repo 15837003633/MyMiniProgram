@@ -14,7 +14,7 @@
   <view class="body">
     <block wx:for="{{recomentSongList}}" wx:key="id">
       <view class="item">
-        <song-item-v1 songInfo="{{item}}"></song-item-v1>
+        <song-item-v1 songInfo="{{item}}" bind:tap="onSongClick" data-index="{{index}}"/>
       </view>
     </block>
   </view>

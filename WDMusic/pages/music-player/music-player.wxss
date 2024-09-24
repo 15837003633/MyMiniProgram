@@ -47,6 +47,7 @@
 }
 .song-panel .album-img{
   width: 100%;
+  max-height: 400px;
   border-radius: 20rpx;
 }
 .song-panel .info {
@@ -78,6 +79,10 @@
   font-size: 26rpx;
 }
 
+.song-panel .lyric {
+  height: 40rpx;
+}
+
 .song-panel .control {
   display: flex;
   justify-content: space-between;
@@ -90,4 +95,25 @@
 
 .song-panel .control .btn.play{
   width: 120rpx;
+}
+
+.lyric-panel {
+  height: 100%;
+  color: #aaa;
+  text-align: center;
+  font-size: 30rpx;
+}
+
+.lyric-panel ::-webkit-scrollbar {
+  display: none;
+}
+
+.lyric-panel .item {
+  height: 35px;
+  margin: 0 80rpx;
+}
+
+.lyric-panel .item.active {
+  color: #0f0;
+  font-size: 40rpx;
 }

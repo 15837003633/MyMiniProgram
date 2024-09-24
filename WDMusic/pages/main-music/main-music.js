@@ -2,6 +2,7 @@ import {getMusicBanner, getSongMenuList} from "../../services/music"
 import {wdQueryComponentRect} from "../../utils/util"
 import {recomendSongStore} from "../../store/recommendSong"
 import {rankingStore} from "../../store/rankSongStore"
+import playerStore from "../../store/playerStore"
 Page({
   data:{
     // banner
@@ -33,6 +34,12 @@ Page({
   },
 
   // ========== 事件处理 ==========
+
+  onSongClick(event){
+    const index = event.currentTarget.dataset.index
+    playerStore.setState("songList",this.data.recomentSongList,index)
+    playerStore.setState("selectIndex",index)
+  },
 
   // 根据Image组件的实际高度来绝对的bannerview的高度，防止widthFix导致图片被裁剪
   // TODO: 这里需要做节流，防抖， 什么是节流？什么是防抖？
